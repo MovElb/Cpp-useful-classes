@@ -93,22 +93,3 @@ std::ostream& operator << (std::ostream& out, const Complex& z) {
     out << z.Re() << Im;
     return out;
 }
-
-int main() {
-    Complex a (3, 1);
-    Complex b (2, 0);
-    std::cout << a + b << '\n';
-    std::cout << a - b << '\n';
-    std::cout << a * b << '\n';
-    std::cout << a / b << '\n';
-    std::cout << +a << '\n';
-    std::cout << -a << '\n';
-    std::cout << a.Re() << '\n';
-    std::cout << a.Im() << '\n';
-    std::cout << abs(a) << '\n';
-    std::cout << (a == b) << '\n';
-    std::cout << (a != b) << '\n';
-    std::cout << (a == a) << '\n';
-    std::cout << (a != a) << '\n';
-    std::cout << 3 * a;
-}
