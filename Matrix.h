@@ -251,26 +251,3 @@ std::ostream& operator<<(std::ostream& out, const Matrix<T>& m) {
     }
     return out;
 }
-
-int main() {
-    const std::vector<std::vector<int>> p = {{1, 2, 3},
-                                             {3, 4, 5},
-                                             {6, 7, 8},
-                                             {11, 12, 13}};
-    std::vector<std::vector<int>> n = {{4, 2, -1},
-                                          {5, 3, -2},
-                                          {3, 2, -3}};
-    std::vector<int> b = {1,
-                             2,
-                             0};
-
-    Matrix<int> d(p);
-    Matrix<int> k(n);
-
-    std::cout << d << '\n';
-
-    std::vector<int> tt = k.solve(b);
-    for (auto e : tt) {
-        std::cout << e << '\n';
-    }
-}
