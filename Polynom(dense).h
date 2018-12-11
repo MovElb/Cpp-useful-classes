@@ -238,33 +238,3 @@ std::ostream& operator << (std::ostream& out, const Polynomial<T>& pol) {
     }
     return out;
 }
-int main() {
-    /*
-    std::vector<int> r{1, 2};
-    Polynomial<int> t(r);
-    std::vector<int> k{1, 2, 1};
-    Polynomial<int> p(k);
-    std::cout << p << '\n';
-    std::cout << t << '\n';
-    std::cout << (p , t) << '\n';
-     */
-
-    for (int i = 1; i != 3; ++i) {
-        for (int j = 0; j != 3; ++j) {
-            for (int k = 0; k != 3; ++k) {
-                for (int a = 1; a != 3; ++a) {
-                    for (int b = 0; b != 3; ++b) {
-                        for (int c = 0; c != 3; ++c) {
-                            std::vector<int> x{k, j, i};
-                            std::vector<int> y{c, b, a};
-                            Polynomial<int> p_1(x);
-                            Polynomial<int> p_2(y);
-                            std::cout << '(' << p_1 << ')' << " * (" << p_2 << ") = " << p_1 * p_2 << '\n';
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
